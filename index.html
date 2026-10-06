@@ -318,6 +318,81 @@
         color: #26303f;
       }
 
+      /* ---------- PROPÓSITO ---------- */
+      .mv {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 16px;
+        margin: 34px 0 8px;
+      }
+      .mv__card {
+        background: #fff;
+        border: 1px solid var(--linea);
+        border-radius: 14px;
+        padding: 28px 26px 30px;
+      }
+      .mv__card--dark {
+        background: var(--marino);
+        border-color: var(--marino);
+      }
+      .mv__label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--piedra);
+        margin-bottom: 16px;
+      }
+      .mv__label::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: var(--magenta);
+      }
+      .mv__card p {
+        font-family: var(--display);
+        font-weight: 500;
+        font-size: 1.15rem;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+        color: var(--marino);
+      }
+      .mv__card--dark .mv__label {
+        color: var(--celeste);
+      }
+      .mv__card--dark p {
+        color: #fff;
+      }
+      .values {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 14px;
+        margin: 0;
+        padding: 0;
+      }
+      .values li {
+        background: var(--bruma);
+        border: 1px solid var(--celeste);
+        border-radius: 12px;
+        padding: 18px 20px 20px;
+        font-family: var(--display);
+        font-weight: 500;
+        font-size: 1.05rem;
+        color: var(--marino);
+      }
+      .values li span {
+        display: block;
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        color: var(--magenta);
+        margin-bottom: 10px;
+      }
+
       /* ---------- LOGOTIPO ---------- */
       .logo-grid {
         display: grid;
@@ -1010,7 +1085,7 @@
       </svg>
       <p class="hero__tag">Equilibrio diario,<br /><em>en serio.</em></p>
       <div class="hero__line"></div>
-      <div class="hero__meta">v2.0</div>
+      <div class="hero__meta">v2.1</div>
     </header>
 
     <div class="shell">
@@ -1039,6 +1114,9 @@
           </li>
           <li>
             <a href="#voz"><span class="n">06</span> Voz</a>
+          </li>
+          <li>
+            <a href="#proposito"><span class="n">07</span> Propósito</a>
           </li>
         </ol>
       </nav>
@@ -1607,6 +1685,43 @@
             </div>
           </div>
         </section>
+
+        <!-- 07 PROPÓSITO -->
+        <section class="section" id="proposito">
+          <div class="eyebrow">
+            <span class="tick"></span><span class="num">07</span> Propósito
+          </div>
+          <h2 class="title">Misión, visión y valores.</h2>
+          <div class="mv">
+            <div class="mv__card">
+              <span class="mv__label">Misión</span>
+              <p>
+                Crear alimentos, bebidas y suplementos naturales funcionales,
+                pensados para la vida moderna, elaborados con criterio, buscando
+                excelencia y eficiencia.
+              </p>
+            </div>
+            <div class="mv__card mv__card--dark">
+              <span class="mv__label">Visión</span>
+              <p>
+                Ser la marca referente de una nueva generación de bienestar en
+                la que cuidarse forme parte de un estilo de vida deseado y
+                moderno.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="sub">Valores</h3>
+          <ol class="values">
+            <li><span>01</span>Bienestar integral</li>
+            <li><span>02</span>Calidad con propósito</li>
+            <li><span>03</span>Naturalidad</li>
+            <li><span>04</span>Disfrute</li>
+            <li><span>05</span>Innovación</li>
+            <li><span>06</span>Simplicidad</li>
+            <li><span>07</span>Actitud</li>
+          </ol>
+        </section>
       </main>
     </div>
 
@@ -1618,7 +1733,7 @@
         Este manual es una guía viva. A medida que el producto entre en mercado,
         sus secciones se van a actualizar y ampliar.
       </p>
-      <div class="fmeta">Level® · Manual de marca · v2.0</div>
+      <div class="fmeta">Level® · Manual de marca · v2.1</div>
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
